@@ -1,5 +1,7 @@
 package com.example.firebasestart;
 
+import android.widget.ArrayAdapter;
+
 import androidx.annotation.NonNull;
 
 import com.example.firebasestart.model.Note;
@@ -16,6 +18,10 @@ import java.util.Map;
 
 public class FirebaseService {
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private ArrayAdapter adapter;
+    public FirebaseService(ArrayAdapter adapter) {
+       this.adapter = adapter;
+    }
 
     public void addNote(String text){
         DocumentReference ref = db.collection("notes").document();
@@ -44,8 +50,10 @@ public class FirebaseService {
                     String t = s.getData().get("text").toString();
                     Note note = new Note(t, s.getId());
                     list.add(note);
-                    // adapter.notifyDatasetChanged(); // will update the gui
                 }
+                adapter.clear();
+                adapter.addAll(list);
+                adapter.notifyDataSetChanged(); // will update the gui
             }
         });
     }
