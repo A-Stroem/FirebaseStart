@@ -2,12 +2,16 @@ package com.example.firebasestart;
 
 import androidx.annotation.NonNull;
 
+import com.example.firebasestart.model.Note;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class FirebaseService {
@@ -28,6 +32,22 @@ public class FirebaseService {
                         System.out.println("document saved, " + text))
         .addOnFailureListener(e ->
                 System.out.println("document NOT saved, " + text));
+    }
+    private String notes = "notes";
+    public List<Note> list = new ArrayList<>();
+    public void startListener(){
+        db.collection(notes).addSnapshotListener((snap,error)->{
+            if(error == null){
+                list.clear();
+                for(DocumentSnapshot s :snap.getDocuments()){
+                    System.out.println(s.getData().get("text"));
+                    String t = s.getData().get("text").toString();
+                    Note note = new Note(t, s.getId());
+                    list.add(note);
+                    // adapter.notifyDatasetChanged(); // will update the gui
+                }
+            }
+        });
     }
 
 }
