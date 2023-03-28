@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "1035991261669",
+    "firebase_url": "https://firedemo-b1124.firebaseio.com",
+    "project_id": "firedemo-b1124",
+    "storage_bucket": "firedemo-b1124.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035991261669:android:7d01bd1beab68e219b4f0c",
+        "android_client_info": {
+          "package_name": "com.example.delete"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035991261669-sbiud3di2h9plco4nee0cbjsf2tfea8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBftLHrBjuOU6yN-kED-utH0b4erjcmYV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035991261669-sbiud3di2h9plco4nee0cbjsf2tfea8r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1035991261669-0u1tf3nlecukotsftp9e5o49l33h7bt5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jon.NotebookDemo2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035991261669:android:396fbe7e40e95f359b4f0c",
+        "android_client_info": {
+          "package_name": "com.example.firebasestart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035991261669-sbiud3di2h9plco4nee0cbjsf2tfea8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBftLHrBjuOU6yN-kED-utH0b4erjcmYV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035991261669-sbiud3di2h9plco4nee0cbjsf2tfea8r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1035991261669-0u1tf3nlecukotsftp9e5o49l33h7bt5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jon.NotebookDemo2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035991261669:android:b64f565e448ae8ae9b4f0c",
+        "android_client_info": {
+          "package_name": "com.example.listviewprep3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035991261669-sbiud3di2h9plco4nee0cbjsf2tfea8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBftLHrBjuOU6yN-kED-utH0b4erjcmYV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035991261669-sbiud3di2h9plco4nee0cbjsf2tfea8r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1035991261669-0u1tf3nlecukotsftp9e5o49l33h7bt5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jon.NotebookDemo2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
