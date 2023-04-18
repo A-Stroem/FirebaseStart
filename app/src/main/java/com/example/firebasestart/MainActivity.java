@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void loadImageFromFirebaseStorage() {
         // Replace "path/to/image.jpg" with the path to the image in Firebase Storage
-        StorageReference imageRef = storageReference.child("path/to/image");
+        StorageReference imageRef = storageReference.child("P7150001.JPG");
         imageRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
