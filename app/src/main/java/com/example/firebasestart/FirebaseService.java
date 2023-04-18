@@ -20,7 +20,7 @@ public class FirebaseService {
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private ArrayAdapter adapter;
     public FirebaseService(ArrayAdapter adapter) {
-       this.adapter = adapter;
+        this.adapter = adapter;
     }
 
     public void addNote(String text){
@@ -36,8 +36,8 @@ public class FirebaseService {
         map.put("text", text);
         ref.set(map).addOnSuccessListener(unused ->
                         System.out.println("document saved, " + text))
-        .addOnFailureListener(e ->
-                System.out.println("document NOT saved, " + text));
+                .addOnFailureListener(e ->
+                        System.out.println("document NOT saved, " + text));
     }
     private String notes = "notes";
     public List<Note> list = new ArrayList<>();

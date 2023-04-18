@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FirebaseStart</string>
+    <string name="image_content_description">This is an image</string>
+
 </resources>

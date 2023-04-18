@@ -39,4 +39,6 @@ dependencies {
     // ready to add specific firebase dep.
     // https://firebase.google.com/docs/android/setup#available-libraries
     implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
